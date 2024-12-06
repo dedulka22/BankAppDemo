@@ -11,7 +11,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -22,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.bankapp.data.model.Transaction
 import com.example.bankapp.ui.viewmodel.TransactionViewModel
+import com.example.bankapp.utils.formatDateString
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -137,7 +137,7 @@ fun TransactionItem(
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
-                    text = "Date: ${transaction.date}",
+                    text = "Date: ${transaction.date.formatDateString()}",
                     style = MaterialTheme.typography.bodyMedium.copy(
                         color = Color(0xFF0D47A1)
                     )

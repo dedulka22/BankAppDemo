@@ -9,10 +9,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -20,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.bankapp.data.model.TransactionDetail
 import com.example.bankapp.ui.viewmodel.TransactionDetailViewModel
+import com.example.bankapp.utils.formatDateString
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -93,7 +92,7 @@ fun TransactionDetailContent(
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 DetailRow(label = "Amount", value = "${transactionDetail.amount}")
-                DetailRow(label = "Date", value = transactionDetail.date)
+                DetailRow(label = "Date", value = transactionDetail.date.formatDateString())
                 DetailRow(label = "Description", value = transactionDetail.description)
                 DetailRow(label = "Category", value = transactionDetail.category)
                 DetailRow(label = "Transaction Type", value = transactionDetail.transactionType)
