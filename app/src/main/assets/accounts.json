@@ -1,0 +1,44 @@
+[
+  {
+    "accountId": "1001",
+    "accountName": "Personal Checking",
+    "accountType": "Checking",
+    "balance": 1534.50,
+    "currency": "EUR"
+  },
+  {
+    "accountId": "1002",
+    "accountName": "Savings Account",
+    "accountType": "Savings",
+    "balance": 8200.00,
+    "currency": "EUR"
+  },
+  {
+    "accountId": "1003",
+    "accountName": "Business Account",
+    "accountType": "Business",
+    "balance": 45200.75,
+    "currency": "EUR"
+  },
+  {
+    "accountId": "1004",
+    "accountName": "Personal Investment",
+    "accountType": "Investment",
+    "balance": 3200.30,
+    "currency": "USD"
+  },
+  {
+    "accountId": "1005",
+    "accountName": "Joint Account",
+    "accountType": "Checking",
+    "balance": 720.50,
+    "currency": "EUR"
+  },
+  {
+    "accountId": "1006",
+    "accountName": "Empty Account",
+    "accountType": "Checking",
+    "balance": 0.00,
+    "currency": "EUR"
+  }
+]

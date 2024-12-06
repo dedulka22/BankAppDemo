@@ -1,0 +1,137 @@
+[
+  {
+    "transactionId": "t001",
+    "accountId": "1001",
+    "date": "2024-11-18T10:15:00",
+    "amount": -45.50,
+    "description": "Grocery Store",
+    "category": "Food",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t002",
+    "accountId": "1002",
+    "date": "2024-11-17T08:45:00",
+    "amount": 1200.00,
+    "description": "Salary",
+    "category": "Income",
+    "transactionType": "Credit"
+  },
+  {
+    "transactionId": "t003",
+    "accountId": "1001",
+    "date": "2024-11-16T15:30:00",
+    "amount": -15.75,
+    "description": "Coffee Shop",
+    "category": "Food",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t004",
+    "accountId": "1003",
+    "date": "2024-11-15T14:00:00",
+    "amount": 500.00,
+    "description": "Freelance Work",
+    "category": "Income",
+    "transactionType": "Credit"
+  },
+  {
+    "transactionId": "t005",
+    "accountId": "1001",
+    "date": "2024-11-14T13:15:00",
+    "amount": -120.50,
+    "description": "Electricity Bill",
+    "category": "Utilities",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t006",
+    "accountId": "1002",
+    "date": "2024-11-13T12:45:00",
+    "amount": -200.00,
+    "description": "Rent Payment",
+    "category": "Housing",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t007",
+    "accountId": "1003",
+    "date": "2024-11-12T11:30:00",
+    "amount": 1000.00,
+    "description": "Refund",
+    "category": "Income",
+    "transactionType": "Credit"
+  },
+  {
+    "transactionId": "t008",
+    "accountId": "1001",
+    "date": "2024-11-11T10:20:00",
+    "amount": -50.00,
+    "description": "Restaurant",
+    "category": "Food",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t009",
+    "accountId": "1002",
+    "date": "2024-11-10T09:00:00",
+    "amount": 150.00,
+    "description": "Gift from Parent",
+    "category": "Gift",
+    "transactionType": "Credit"
+  },
+  {
+    "transactionId": "t010",
+    "accountId": "1003",
+    "date": "2024-11-09T08:30:00",
+    "amount": -30.00,
+    "description": "Bus Ticket",
+    "category": "Transport",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t011",
+    "accountId": "1004",
+    "date": "2024-11-08T07:00:00",
+    "amount": -85.00,
+    "description": "Gym Membership",
+    "category": "Health",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t012",
+    "accountId": "1005",
+    "date": "2024-11-07T06:15:00",
+    "amount": 250.00,
+    "description": "Consulting Fee",
+    "category": "Income",
+    "transactionType": "Credit"
+  },
+  {
+    "transactionId": "t013",
+    "accountId": "1004",
+    "date": "2024-11-06T05:00:00",
+    "amount": -60.00,
+    "description": "Mobile Bill",
+    "category": "Utilities",
+    "transactionType": "Debit"
+  },
+  {
+    "transactionId": "t014",
+    "accountId": "1005",
+    "date": "2024-11-05T04:30:00",
+    "amount": 200.00,
+    "description": "Investment Return",
+    "category": "Investment",
+    "transactionType": "Credit"
+  },
+  {
+    "transactionId": "t015",
+    "accountId": "1002",
+    "date": "2024-11-04T03:45:00",
+    "amount": -200.00,
+    "description": "Car Insurance",
+    "category": "Insurance",
+    "transactionType": "Debit"
+  }
+]
