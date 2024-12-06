@@ -7,6 +7,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -22,7 +25,8 @@ import com.example.bankapp.ui.viewmodel.TransactionDetailViewModel
 @Composable
 fun TransactionDetailScreen(
     viewModel: TransactionDetailViewModel,
-    transactionId: String
+    transactionId: String,
+    onBack: () -> Unit
 ) {
     val transactionDetail by viewModel.transactionDetail.collectAsState()
 
@@ -34,6 +38,11 @@ fun TransactionDetailScreen(
         topBar = {
             TopAppBar(
                 title = { Text("Transaction Detail", color = Color.White) },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                    }
+                },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF0D47A1))
             )
         }

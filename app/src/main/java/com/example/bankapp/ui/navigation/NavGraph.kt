@@ -34,7 +34,8 @@ fun NavGraph(
                     onClickItem = { transaction ->
                         navController.navigate("transactionDetail/${transaction.transactionId}")
                     },
-                    viewModel = transactionViewModel
+                    viewModel = transactionViewModel,
+                    onBack = { navController.popBackStack() }
                 )
             } else {
                 Log.e("NavGraph", "accountId is null")
@@ -46,7 +47,8 @@ fun NavGraph(
             if (transactionId != null) {
                 TransactionDetailScreen(
                     viewModel = transactionDetailViewModel,
-                    transactionId = transactionId
+                    transactionId = transactionId,
+                    onBack = { navController.popBackStack() }
                 )
             } else {
                 Log.e("NavGraph", "transactionId is null")

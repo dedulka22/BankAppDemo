@@ -9,6 +9,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -25,7 +28,8 @@ import com.example.bankapp.ui.viewmodel.TransactionViewModel
 fun TransactionScreen(
     accountId: String,
     onClickItem: (Transaction) -> Unit,
-    viewModel: TransactionViewModel
+    viewModel: TransactionViewModel,
+    onBack: () -> Unit,
 ) {
     val transactions by viewModel.getTransactionsForAccount(accountId).collectAsState(
         initial = emptyList()
@@ -35,6 +39,11 @@ fun TransactionScreen(
         topBar = {
             TopAppBar(
                 title = { Text("Transactions for Account ID: $accountId", color = Color.White) },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                    }
+                },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF0D47A1))
             )
         }
@@ -51,6 +60,7 @@ fun TransactionScreen(
                     )
                 }
             }
+
             else -> {
                 LazyColumn(
                     contentPadding = paddingValues,
