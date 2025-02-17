@@ -10,11 +10,10 @@ import kotlinx.serialization.json.Json
 
 class TransactionRepositoryImpl(private val context: Context): TransactionRepository {
 
-    override fun getTransactions(accountId: String): Flow<List<Transaction>> = flow {
+    override fun getTransactions(accountId: String): List<Transaction> {
         val jsonString: String = readJsonFromAssets(context, "transactions.json")
 
         val allTransactions: List<Transaction> = Json.decodeFromString(jsonString)
-        val filteredTransactions = allTransactions.filter { it.accountId == accountId }
-        emit(filteredTransactions)
+        return allTransactions.filter { it.accountId == accountId }
     }
 }
